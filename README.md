@@ -1,14 +1,30 @@
-# TSDX User Guide
+# Create  A JSON Web Token (JWT) Library From Scratch
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+### What are we building?
+* A JSON Web Token (JWT) library with the following functions:
+  - Sign
+  - Decode
+  - Verify
 
-> This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
+* Following Test Driven Development (TDD) principals
+* Using Jest as the test framework
+* Bootstrapping the application with [tsdx](https://github.com/formium/tsdx)
 
-> If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
+### Should I use this in my production code?
+* No, please use a trusted library like [`jsonwebtoken` by Auth0](https://www.npmjs.com/package/jsonwebtoken)
+* Only if you build out all the features and test, test & then test again
+
+### Why follow this tutorial?
+* Learn about testing with Jest & TDD
+* Security
+  - JWTs protect your systems resources
+  - Understanding how each bit of your auth works will help you keep it secure
+  - This guide will help you understand how JWTs work
+  - Security is important and as a developer it's your job to keep the system secure
+
+<hr />
 
 ## Commands
-
-TSDX scaffolds your new library inside `/src`.
 
 To run TSDX, use:
 
@@ -92,11 +108,6 @@ The appropriate paths are configured in `package.json` and `dist/index.js` accor
 
 Per Palmer Group guidelines, [always use named exports.](https://github.com/palmerhq/typescript#exports) Code split inside your React app instead of your React library.
 
-## Including Styles
-
-There are many ways to ship styles, including with CSS-in-JS. TSDX has no opinion on this, configure how you like.
-
-For vanilla CSS, you can include it at the root directory and add it to the `files` section in your `package.json`, so that it can be imported separately by your users and run through their bundler's loader.
 
 ## Publishing to NPM
 
